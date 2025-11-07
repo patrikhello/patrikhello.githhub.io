@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ez nem balazs weboldala</title>
+<style>
+h1 {
+    color: #696969;
+	background-color: #D3D3D3;
+	width: 400px;
+	height: 56px;
+	text-align: center;
+	border-radius: 20px 10px 20px 10px;
+	padding: 10px;
+	margin-left: 39%;
+	margin-bottom: 10px;
+}	
+
+h2 {
+    text-align: center;
+}	
+
+#kep {
+      position: absolute;
+	  top: 20%;
+	  left: 35%;
+	  rotate: 0deg;
+	  animation-name: kepmozgo;
+	  animation-duration: 60s;
+	  animation-iteration-count: infinite;
+	  
+}	  
+
+#kep2 {
+      position: absolute;
+	  top: 57%;
+	  left: 37%;
+	  rotate: 0deg;
+	  animation-name: kepmozgo;
+	  animation-duration: 2s;
+	  animation-iteration-count: infinite;
+	  
+}	  
+
+@keyframes kepmozgo {
+     0% {rotate: 0deg}
+	 50% {rotate: 180deg}
+	 100% {rotate: 360deg}
+}
+	 
+</style>
+</head>
+<body>
+<h1>Üdv itt!</h1>
+<h2>Jó volt!</h2>
+<br><br>
+<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Macaca_nigra_self-portrait_large.jpg/250px-Macaca_nigra_self-portrait_large.jpg" width="400px" id="kep2">
+
+<iframe id="kep" width="560" height="315" src="https://www.youtube.com/embed/BHvL8WZCEm4?si=VfsS0DYW1ydw2Ynm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
