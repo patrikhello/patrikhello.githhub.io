@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+
+ide jon a szoveg
+
+<div id="szoveg"></div>
+</body>
+
+<script>
+
+var veletlenszam = Math.floor(Math.random()*6);
+
+console.log(veletlenszam);
+document.getElementById('szoveg').innerHTML = veletlenszam;
+
+var szavak = ['tavevezerlo', 'telefon', 'mano', 'szex', 'mcisti', 'klima', '<br>' ];
+
+document.getElementById('szoveg').innerHTML = szavak[veletlenszam];
+
+var szoveg = '';
+
+setInterval(function() {
+
+     veletlenszam = Math.floor(Math.random()*7);
+	 szoveg = szoveg + ' ' + szavak[veletlenszam];
+     document.getElementById('szoveg').innerHTML = szoveg;
+	 
+},500)
+	 
+</script>
+
+</html>
