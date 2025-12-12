@@ -3,9 +3,9 @@
 <style>
 
 body {
-     background-color: black;
-	 color:#ffffff;
+  background-image: url("dolphine.jpg");
 }
+
 a {
      background-color: #ffff1e;
 	 color: black;
@@ -49,15 +49,49 @@ a {
      animation-duration: 1s;
 	 
 }	 
+
+.piros-szoveg {
+  color: white;
+}
+
+#fontos-resz {
+  color: white;
+}
+
+.arnyek-korvonal {
+  color: white; /* Szöveg belső színe */
+  text-shadow: 
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000; /* Négy árnyék a körvonalhoz */
+}
+
+#kep {
+      position: absolute;
+	  top: 15%;
+	  left: 70%;
+	  rotate: 0deg;
+	  animation-name: kepmozgo;
+	  animation-duration: 60s;
+	  animation-iteration-count: infinite;
+	  
+}
+
+
 </style>
 </head>
 <body>
-Aloha<br>miau
-<big><big><big>miau</big></big></big>
-<br><br><br>
-<a href="uj2.html">ez nem müködik =,( </a><br>
+
+<p class="arnyek-korvonal" class="piros-szoveg"><big><big><big>Aloha!</big></big><br><big><big><big>Új-média1</big></big></big></p>
+<p class="arnyek-korvonal"  id="fontos-resz"><big><big><big><big><big>Tóth Mélykúti Patrik</big></big></big></p>
+<br>
+<a href="uj2.html"><big><big><big>Ez a videóm ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧  </a><br>
 <a href="uj2.html"><img src="zeljkobebek.jpg" id="zeljkobebek"></a>
 <br>
+
+<iframe id="kep" width="560" height="315" src="https://www.youtube.com/embed/wfOXpVB4ocs?si=RFdvi9mQRmtH61lb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <div id="mcisti1">zeljko bebek</div>
 </body>
 </html>
